@@ -1,7 +1,6 @@
 package ec.pymeapps.jpa.app.controller;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +26,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -47,7 +45,8 @@ public class ClienteController {
 	
 	@Autowired
 	private IClienteService clienteService;
-	
+
+	/*
 	// con @ResponseBody especifico que el resultado no sera una vista y sera una repsuesta de un metodo REST en JSON
 	// si creo un new ClientList(clienteService.findAll()) y lo retorno la respuesta sera en XML
 	@GetMapping(value = "/api/listar")
@@ -55,6 +54,7 @@ public class ClienteController {
 	public List<Cliente> listarRest() {
 		return clienteService.findAll();
 	}
+	*/
 	
 	@GetMapping(value = {"/listar", "/"})
 	public String listar(@RequestParam(name ="page", defaultValue = "0") int page,

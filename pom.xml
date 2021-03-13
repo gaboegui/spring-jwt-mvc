@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ec.pymeapps.jwt</groupId>
-	<artifactId>udemy-spring-jwt</artifactId>
+	<artifactId>spring-jwt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>udemy-spring-jwt-mvc</name>
+	<name>spring-jwt-mvc</name>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -97,5 +97,5 @@
 		</plugins>
 	</build>
 
-	<description>pring boot 2 project using: JPA, MVC and Thymeleaf using MySql as DB with JWT Security</description>
+	<description>spring boot 2 project using: JPA, MVC and Thymeleaf using MySql as DB with JWT Security</description>
 </project>
